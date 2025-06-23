@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win App</title>
+    <link rel="stylesheet" href="src\style.css">
+    <script src="src\window.js"></script>
+</head>
+<body>
+    <!--struttura finestra-->
+    <div id="window" src="index.html" onload="window()" name="frame">
+        <div id="isFrame" src="app.html" onload="window.status=''" onmouseout="window.statusbar=''; return true">
+        <div id="isConsoleFrame" src="console.html" onload="window.console">
+        <div id="isWorkbanch" src="workbench.html" onload="window.status=''"onmouseout="window.statusbar=''; return true"></div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

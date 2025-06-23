@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="src\style.css">
+    <title>Shell</title>
+</head>
+<body>
+    <!--cmd tanto per ragioni di sicurezza dal browser non si lanciano programmi
+      e applicazioni-->
+    <button onclick="open_cmd()">cmd</button>  
+    <script>
+        function open_cmd() {  
+        var oShell = new ActiveXObject("WScript.Shell");
+        oShell.Run("cmd.exe /k dir");
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;   
+    text-decoration: none;
+}
+#window{
+    text-align: center;
+    max-width: 700px;
+    max-height: 300px;
+}
+#isConsoleFrame{
+    background-color: black;
+    width: 700px;
+    height: 300px;
+    border-radius: 1%;
+}
+img{
+    text-align: center;
+    offset-anchor: auto;
+    width: auto;
+    height: auto;
+    display: grid;
+    background-color: blue;
+}
+#isStoreFrame,a{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    display:grid;
+    /* Colonne flessibili: minimo 150px, si espandono equamente */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px; /* Spazio tra gli elementi della griglia */
+    justify-content: center; /* Centra gli elementi orizzontalmente nella griglia */
+    align-items: start; /* Allineamento verticale degli elementi nella griglia */
+    padding: 20px;
+}
